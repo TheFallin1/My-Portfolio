@@ -145,7 +145,73 @@ const Hero = () => {
           animation: bounce 2s infinite;
         }
 
-        @keyframes fadeInUp {
+        @media (max-width: 768px) {
+          .hero {
+            padding: 0 15px;
+          }
+
+          .hero-content {
+            max-width: 100%;
+            padding: 0 1rem;
+          }
+
+          .hero-name {
+            font-size: clamp(2.5rem, 7vw, 4rem);
+          }
+
+          .hero-title {
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
+          }
+
+          .hero-description {
+            font-size: 1rem;
+            max-width: 100%;
+            margin-bottom: 2rem;
+          }
+
+          .hero-buttons {
+            gap: 0.8rem;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .hero-button {
+            width: 100%;
+            max-width: 280px;
+            padding: 12px 24px;
+            font-size: 15px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .hero {
+            padding: 0 10px;
+          }
+
+          .hero-greeting {
+            font-size: 1rem;
+          }
+
+          .hero-name {
+            font-size: clamp(2rem, 6vw, 3rem);
+          }
+
+          .hero-title {
+            font-size: clamp(1.2rem, 4vw, 1.5rem);
+            margin-bottom: 1.2rem;
+          }
+
+          .hero-description {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+          }
+
+          .hero-button {
+            padding: 10px 20px;
+            font-size: 14px;
+          }
+        }
           from {
             opacity: 0;
             transform: translateY(30px);

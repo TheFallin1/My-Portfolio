@@ -150,7 +150,34 @@ const Navbar = ({ activeSection }) => {
           }
 
           .navbar {
-            padding: 1rem;
+            padding: 0.8rem 1rem;
+          }
+
+          .navbar-logo {
+            font-size: 1.3rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .navbar {
+            padding: 0.6rem 1rem;
+          }
+
+          .navbar-logo {
+            font-size: 1.2rem;
+          }
+
+          .mobile-menu-toggle {
+            font-size: 1.3rem;
+            padding: 0.4rem;
+          }
+
+          .mobile-menu {
+            padding: 0.8rem 1rem;
+          }
+
+          .mobile-menu-list {
+            gap: 0.8rem;
           }
         }
       `}</style>
