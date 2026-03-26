@@ -46,9 +46,6 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Container utility */
@@ -56,6 +53,7 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Typography */
@@ -194,10 +192,20 @@ p {
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* Responsive design */
+/* Responsive design - Mobile First */
+@media (max-width: 1200px) {
+  section {
+    padding: 60px 15px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
 @media (max-width: 1024px) {
   section {
-    padding: 60px 20px;
+    padding: 50px 15px;
   }
   
   .container {
@@ -207,11 +215,11 @@ p {
 
 @media (max-width: 768px) {
   section {
-    padding: 50px 20px;
+    padding: 40px 15px;
   }
   
   .container {
-    padding: 0 15px;
+    padding: 0 10px;
   }
   
   h1 {
@@ -262,11 +270,11 @@ p {
 
 @media (max-width: 480px) {
   section {
-    padding: 30px 15px;
+    padding: 30px 10px;
   }
   
   .container {
-    padding: 0 10px;
+    padding: 0 5px;
   }
   
   h1 {
@@ -314,6 +322,29 @@ p {
   .grid-4 {
     grid-template-columns: 1fr;
     gap: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  section {
+    padding: 20px 5px;
+  }
+  
+  h1 {
+    font-size: 1.6rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+  
+  .btn {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  
+  .card {
+    padding: 1rem;
   }
 }
 
