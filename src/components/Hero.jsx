@@ -290,8 +290,7 @@ const Hero = () => {
               alert('CV download functionality would be implemented here. You could link to a PDF file or generate one dynamically.')
             }}
           >
-            <span>📄</span>
-            Download CV
+            Download Resume
           </a>
         </div>
       </div>
