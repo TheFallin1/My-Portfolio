@@ -212,6 +212,7 @@ const Hero = () => {
             font-size: 14px;
           }
         }
+        @keyframes fadeInUp {
           from {
             opacity: 0;
             transform: translateY(30px);
